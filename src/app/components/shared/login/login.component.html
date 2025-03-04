@@ -14,7 +14,7 @@
                   <h4 class="mt-1 mb-5 pb-2">CampusSphere - Student Management System</h4>
                 </div>
 
-                <form >
+                <form (ngSubmit)="onSubmit()">
 
                   <div data-mdb-input-init class="form-outline mb-4">
                     <label class="form-label" for="form2Example11"><i class="bi bi-envelope-fill"></i> E-Mail</label>
@@ -27,7 +27,7 @@
                     <input type="password" id="form2Example22" class="form-control" placeholder="Enter Password"
                       formControlName="password" />
                     <!-- Error Message -->
-                    <div 
+                    <div *ngIf=""
                       class="text-danger">
                       Password must be at least 6 characters long.
                     </div>
@@ -35,7 +35,7 @@
 
                   <div class="text-center pt-1  mb-5 pb-1 d-flex flex-column justify-content-evenly">
                     <button data-mdb-button-init data-mdb-ripple-init class="btn btn-secondary btn-block mb-2 mt-5"
-                      type="submit" (ngSubmit)="onSubmit()" [disabled]="loginForm || isLoading">
+                    >
                       {{ isLoading ? 'Logging in...' : 'Log in' }}</button>
                     <a class="text-muted mb-1 mt-2" [routerLink]="['/forgotPassword']" >Forgot password?</a>
                   </div>
