@@ -9,6 +9,7 @@ import { Component } from '@angular/core';
 export class SidebarComponent {
   
   imageUrl: string = 'perfil.png';
+  sidebarimage : string = 'UNICOM-TIC_LOGO.png'
 
   toggleCollapse(): void {
     // this.changeIsLeftSidebarCollapsed.emit(!this.isLeftSidebarCollapsed());

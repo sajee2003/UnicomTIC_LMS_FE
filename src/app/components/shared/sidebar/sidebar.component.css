@@ -101,7 +101,7 @@ body.dark-theme .sidebar__content::-webkit-scrollbar-thumb {
   left: -120%;
   top: 0;
   bottom: 0;
-  background-color:#212631;
+  background-color:#28282e;
   z-index: 100;
   width: 250px;
   /* background-color: hsl(228, 100%, 99%); */
@@ -133,23 +133,26 @@ body.dark-theme .sidebar__content::-webkit-scrollbar-thumb {
   padding-left: 2rem;
 }
 
-/* .sidebar__img {
+.sidebar__logo{
   position: relative;
-  width: 50px;
-  height: 50px;
-  background-color: hsl(228, 85%, 63%);
-  border-radius: 50%;
-  overflow: hidden;
+  top: 30px;
+  width: 200px;
+  height: 100px;
+  /* background-color: hsl(228, 85%, 63%); */
+  /* border-radius: 50%; */
+  /* overflow: hidden; */
   display: grid;
   justify-items: center;
 }
 
-.sidebar__img img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+.sidebar__logo img {
+
+height: 70%;
+ justify-items: center;
+ position:absolute;
+  /* border-radius: 50%; */
   object-fit: cover;
-} */
+}
 
 .sidebar__info h3 {
   font-size: .938rem;
