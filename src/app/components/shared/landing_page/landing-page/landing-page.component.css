@@ -1,6 +1,10 @@
 /* Background Image for the Body */
+*{
+  margin: 0;
+  padding: 0;
+}
 .body {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(8, 3, 34, 0.8)), url(/ai-generated-portrait-of-a-smiling-schoolgirl-using-laptop-in-classroom-at-school-photo\ \(1\).jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(8, 3, 34, 0.9)), url(/ai-generated-portrait-of-a-smiling-schoolgirl-using-laptop-in-classroom-at-school-photo\ \(1\).jpg);
   height: 800px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -12,6 +16,8 @@
   width: 100px;
   height: auto;
 }
+
+
 
 /* Navbar Custom Styles */
 .navbar-nav .nav-link {
@@ -48,4 +54,56 @@ i {
 /* Footer Section */
 .container {
   font-family: Arial, sans-serif;
+
+  
+}
+
+.img-fluid{
+
+  height: 300px;
+  width: 300px;
+}
+#con_1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Ensures vertical alignment */
+  padding: 20px;
+}
+
+#con_h2 {
+  margin: 0;
+  flex: 1; /* Allows it to take available space */
+  text-align: left; /* Aligns text to the left */
+}
+
+#con_icon {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end; /* Moves icons to the right */
+}
+
+i {
+  margin-left: 10px; /* Adds spacing between icons */
+}
+
+.main2 {
+  display: flex;              /* Enable flexbox */
+  justify-content: center;    /* Center content horizontally */
+  align-items: center;        /* Center content vertically */
+  margin-bottom: 40px;        /* Optional, to add space between sections */
+}
+
+.main2 img {
+  width: 100%;
+  height: auto;
+  max-width: 500px;           /* Optional, to limit image size */
+}
+
+@media (max-width: 768px)
+
+{
+  #con{
+   display: block;
+  }
+
 }
