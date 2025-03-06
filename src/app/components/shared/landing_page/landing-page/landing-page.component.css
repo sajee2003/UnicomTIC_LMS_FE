@@ -1,109 +1,71 @@
-/* Background Image for the Body */
-*{
-  margin: 0;
-  padding: 0;
-}
-.body {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(8, 3, 34, 0.9)), url(/ai-generated-portrait-of-a-smiling-schoolgirl-using-laptop-in-classroom-at-school-photo\ \(1\).jpg);
-  height: 800px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-bottom-right-radius: 300px;
-}
-
-/* Logo Image */
-.logo img {
-  width: 100px;
-  height: auto;
-}
-
-
-
-/* Navbar Custom Styles */
-.navbar-nav .nav-link {
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.navbar-toggler {
-  position: absolute;
-  right: 0;
-}
-
-/* Heading Section */
-.display-1 {
-  font-weight: bold;
-}
-
-.text-muted {
-  font-style: italic;
-}
-
-.text-center p {
-  font-size: 18px;
-  font-family: 'Georgia', Times, serif;
-}
-
-/* Icon Section */
-i {
-  color: #525151;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-/* Footer Section */
-.container {
-  font-family: Arial, sans-serif;
-
-  
-}
-
-.img-fluid{
-
-  height: 300px;
-  width: 300px;
-}
-#con_1 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; /* Ensures vertical alignment */
-  padding: 20px;
-}
-
-#con_h2 {
-  margin: 0;
-  flex: 1; /* Allows it to take available space */
-  text-align: left; /* Aligns text to the left */
-}
-
-#con_icon {
-  display: flex;
-  flex: 1;
-  justify-content: flex-end; /* Moves icons to the right */
-}
-
-i {
-  margin-left: 10px; /* Adds spacing between icons */
-}
-
-.main2 {
-  display: flex;              /* Enable flexbox */
-  justify-content: center;    /* Center content horizontally */
-  align-items: center;        /* Center content vertically */
-  margin-bottom: 40px;        /* Optional, to add space between sections */
-}
-
-.main2 img {
-  width: 100%;
-  height: auto;
-  max-width: 500px;           /* Optional, to limit image size */
-}
-
-@media (max-width: 768px)
-
-{
-  #con{
-   display: block;
+  /* Body Background */
+  .body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(8, 3, 34, 0.9)), url(/ai-generated-portrait-of-a-smiling-schoolgirl-using-laptop-in-classroom-at-school-photo\ \(1\).jpg);
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-right-radius: 300px;
+  }
+  /* Logo Image */
+  .logo img {
+    width: 150px;
+    height: auto;
   }
 
+  
+  /* Navbar Custom Styles */
+  .navbar-nav .nav-link {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .navbar-toggler {
+    position: absolute;
+    right: 0;
+  }
+
+  /* Heading Section */
+  .display-1 {
+    font-weight: bold;
+  }
+
+  .text-muted {
+    font-style: italic;
+  }
+
+  .text-center p {
+    font-size: 18px;
+    font-family: 'Georgia', Times, serif;
+  }
+
+  /* Icon Section */
+  i {
+    color: #525151;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .img-fluid  {
+    border-radius: 20px; /* Adjust the value for a more or less pronounced curve */
+    height: 30vh;
+  }
+  
+
+  /* Default image size */
+.responsive-img {
+  width: 100%;
+  height: auto;
+}
+
+/* Adjust image size on smaller screens */
+@media (max-width: 768px) {
+  .responsive-img {
+    width: 80%;
+  }
+}
+
+/* Adjust image size on larger screens */
+@media (min-width: 1200px) {
+  .responsive-img {
+    width: 50%;
+  }
 }
