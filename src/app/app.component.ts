@@ -11,9 +11,7 @@ import { LandingPageComponent } from './components/shared/landing_page/landing-p
 @Component({
   selector: 'app-root',
   standalone: true,
-
-  imports: [RouterOutlet,LoginComponent,RegisterStudentComponent,SidebarComponent,LandingPageComponent],
-
+  imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
