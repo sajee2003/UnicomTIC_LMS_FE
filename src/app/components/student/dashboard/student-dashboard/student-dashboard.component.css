@@ -1,0 +1,92 @@
+/* Ensure cards are the same height and aligned */
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Custom Card Body Styling */
+  .card-body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Card Title Styling */
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  /* Card Text Styling */
+  .card-text {
+    font-size: 16px;
+    color: #555;
+    font-weight: 600;
+  }
+  
+  /* Add some spacing between the cards */
+  .row {
+    margin-top: 20px;
+  }
+  
+  /* Custom card styling */
+  .custom-card {
+    background-color: #f8f9fa; /* Light background for cards */
+    border: 1px solid #ddd;    /* Light border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 8px;
+    padding: 15px;
+  }
+  
+  /* Customize Card Hover Effects */
+  .custom-card:hover {
+    background-color: #e2e6ea; /* Slightly darker background on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+    transform: translateY(-5px); /* Lift card on hover */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+  }
+  
+  /* Style for the Sidebar */
+  .sidebar-content {
+    width: 250px;
+    height: 100vh;
+    padding-top: 20px;
+  }
+  
+  .sidebar-content .navbar {
+    margin-bottom: 0;
+  }
+  
+  .sidebar-content .navbar-nav {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar-content .navbar-nav .nav-item {
+    margin: 15px 0;
+  }
+  
+  .sidebar-content .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  .sidebar-content .navbar-nav .nav-link:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+  
+  /* Adjust main content padding */
+  .main-content {
+    margin-left: 250px;
+    padding: 20px;
+  }
+  
+  .main-content-inner {
+    padding-top: 20px;
+  }
+  
