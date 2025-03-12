@@ -1,0 +1,65 @@
+<div class="d-flex">
+    <!-- Sidebar -->
+    <div class="bg-dark sidebar-content">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Dashboard</a>
+        </div>
+      </nav>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="#" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Settings</a>
+        </li>
+        <!-- Add more items as needed -->
+      </ul>
+    </div>
+  
+    <!-- Main Content -->
+    <div class="main-content">
+      <div class="main-content-inner">
+        <div class="container-fluid">
+          <h1 class="display-4">Welcome to Your Dashboard</h1>
+  
+          <!-- Dashboard Widgets -->
+          <div class="row">
+            <!-- Monthly Attendance Widget -->
+            <div class="col-md-4 mb-4">
+              <div class="card custom-card">
+                <div class="card-body">
+                  <h5 class="card-title">Monthly Attendance</h5>
+                  <p class="card-text">You have attended <strong>{{monthlyAttendance}}%</strong> of your classes this month.</p>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Next Class Widget -->
+            <div class="col-md-4 mb-4">
+              <div class="card custom-card">
+                <div class="card-body">
+                  <h5 class="card-title">Next Class</h5>
+                  <p class="card-text">Your next class is <strong>{{nextClassTime}}</strong>.</p>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Current Time Widget -->
+            <div class="col-md-4 mb-4">
+              <div class="card custom-card">
+                <div class="card-body">
+                  <h5 class="card-title">Current Time</h5>
+                  <p class="card-text"><strong>{{currentTime}}</strong></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

@@ -1,120 +1,145 @@
-  /* Body Background */
-  .body{
-    margin: 0;
-    padding: 10;
-    
-  }
-  .header {
-    background-image: linear-gradient(rgba(255, 255, 255 ,0.5), rgba(8, 3, 34, 0.9)), url(/ai-generated-portrait-of-a-smiling-schoolgirl-using-laptop-in-classroom-at-school-photo\ \(1\).jpg);
-    height: 800px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-bottom-right-radius: 300px;
-  }
-  /* Logo Image */
-  .logo img {
-    width: 150px;
-    height: auto;
-  }
-
-  .education{
-    color: rgb(8, 11, 59);
-  
-  }
-  
-  /* Navbar Custom Styles */
-  .navbar-nav .nav-link {
-    font-weight: bold;
-    font-size: 18px;
-  }
-
-  .navbar-toggler {
-    position: absolute;
-    right: 0;
-  }
-
-  /* Heading Section */
-  .display-1 {
-    font-weight: bold;
-  }
-
-  .text-muted {
-    font-style: italic;
-  }
-
-  .text-center p {
-    font-size: 18px;
-    font-family: 'Georgia', Times, serif;
-  }
-  .text-center .lead {
-    font-size: 22px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: light;
-    color: rgb(0, 0, 0);
-    background-size: cover;
+/* Body Background */
+.body {
+  margin: 0;
+  padding: 10;
 }
 
-/* Styling for the about section */
-#about {
-    
-    padding: 100px;
+.header {
+  background-image: linear-gradient(rgba(255, 255, 255 ,0.5), rgba(8, 3, 34, 0.9)), url(/ai-generated-portrait-of-a-smiling-schoolgirl-using-laptop-in-classroom-at-school-photo\ \(1\).jpg);
+  height: 800px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom-right-radius: 300px;
 }
 
-/* Background styling for Unicom section */
+/* Logo Image */
+.logo img {
+  width: 150px;
+  height: auto;
+}
+
+.education {
+  color: rgb(8, 11, 59);
+}
+
+/* Navbar Custom Styles */
+.navbar-nav .nav-link {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.navbar-toggler {
+  position: absolute;
+  right: 0;
+}
+
+/* Heading Section */
+.display-1 {
+  font-weight: bold;
+}
+
+.text-muted {
+  font-style: italic;
+}
+
+.text-center p {
+  font-size: 18px;
+  font-family: 'Georgia', Times, serif;
+}
+
+.text-center .lead {
+  font-size: 22px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: light;
+  color: rgb(0, 0, 0);
+  background-size: cover;
+}
+
+/* Styling the about section */
 #abut-unciom {
-    background-image: linear-gradient(rgba(184, 192, 204, 0.9), rgba(179, 183, 206, 0.8), rgba(15, 23, 70, 0.9)), url(/Unicom-tic.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 22px;
-    width: 70%;
-    height: 100%;
+  background-color: #f7f9fc; /* Light background */
+  background-image: linear-gradient(45deg, rgba(8, 11, 59, 0.6), rgba(8, 11, 59, 0.3)), url('/Unicom-tic.png'); /* Optional background image with gradient */
+  background-size: cover;
+  background-position: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Styling for heading */
+#about {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #333;
+}
+
 .heading-unicom {
-    margin-bottom: 40px;
+  font-size: 36px;
+  font-weight: bold;
+  color: #0b3051; /* Dark blue for title */
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
 }
 
-/* Responsive adjustments using Bootstrap's grid system */
-@media (max-width: 770px) {
-    #abut-unciom {
-        width: 90%;
-        height: auto;
-    }
-  
+.heading-unicom .text-muted {
+  color: #7f8c8d;
+  font-style: italic;
+  font-weight: normal;
+}
 
-    .text-center .lead {
-        font-size: 20px;
-    }
+.lead {
+  font-size: 18px;
+  font-family: 'Georgia', serif;
+  line-height: 1.8;
+  color: #495057;
+  margin-bottom: 30px;
+}
+
+.lead:last-child {
+  margin-bottom: 0;
+}
+
+#abut-unciom .lead {
+  background-color: rgba(255, 255, 255, 0.7); /* Light background for text */
+  border-radius: 10px;
+  padding: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .heading-unicom {
+    font-size: 30px;
+  }
+
+  .lead {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 576px) {
-    #abut-unciom {
-        width: 100%;
-        height: auto;
-    }
-    
-  
+  .heading-unicom {
+    font-size: 24px;
+  }
 
-    .text-center .lead {
-        font-size: 10px;
-    }
+  .lead {
+    font-size: 14px;
+  }
 }
 
-  /* Icon Section */
-  i {
-    color: #525151;
-    margin-left: 10px;
-    margin-right: 10px;
-    
-  }
-  .img-fluid  {
-    border-radius: 20px; /* Adjust the value for a more or less pronounced curve */
-    height: 30vh;
-  }
-  
+/* Icon Section */
+i {
+  color: #525151;
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
-  /* Default image size */
+.img-fluid {
+  border-radius: 20px; /* Adjust the value for a more or less pronounced curve */
+  height: 30vh;
+}
+
+/* Default image size */
 .responsive-img {
   width: 100%;
   height: auto;
@@ -126,28 +151,26 @@
     width: 80%;
   }
 }
- 
+
 /* Adjust image size on larger screens */
 @media (min-width: 1200px) {
   .responsive-img {
     width: 50%;
   }
- 
+
   i {
     color: #525151;
     margin-left: 10px;
     margin-right: 10px;
   }
 
-  #con_icon{
+  #con_icon {
     margin-left: 30px;
     margin-right: 30px;
-    
   }
 }
-/* 
-footer */
 
+/* Footer */
 .footer {
   font-size: 15px;
   font-family: serif;
@@ -158,9 +181,6 @@ footer */
   font-family: serif;
 }
 
-
 .footer a:hover {
   text-decoration: underline;
 }
-
-
