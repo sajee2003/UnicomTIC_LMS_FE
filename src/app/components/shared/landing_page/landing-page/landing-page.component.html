@@ -57,23 +57,35 @@
     <i class="fa-brands fa-html5 fa-3x mx-3"></i>
   </div>
 </div>
+ 
+
 
 <!-- Welcome Section -->
 <div id="abut-unciom" class="container-fluid py-5">
-  <div id="about" class="text-center">
-    <h2 class="heading-unicom text-light">Welcome To Unicom <span class="text-muted"><strong >TIC</strong></span></h2>
-    <p class="lead">
-      Unicom TIC is a technology and innovation center that offers educational programs in various fields, including
-      software development, networking, and IT-related courses. It focuses on providing students with practical
-      knowledge and hands-on experience to help them excel in their careers. The institution is known for its high-quality
-      training, experienced faculty, and modern learning environment.
-    </p>
-    <p class="lead">
-      At Unicom TIC, students gain industry-relevant skills through project-based learning, workshops, and real-world applications.
-      The center also emphasizes soft skills and communication to ensure graduates are job-ready. Many students from Unicom TIC
-      pursue careers in software development, cybersecurity, and IT support, making it a great choice for those looking to build
-      a strong foundation in technology.
-    </p>
+  <div id="about" class="d-flex justify-content-center align-items-center">
+    <!-- Text Section -->
+    <div class="text-section">
+      <h2 class="heading-unicom text-light">Welcome To Unicom <span class="text-muted"><strong>TIC</strong></span></h2>
+      <p class="lead">
+        Unicom TIC is a technology and innovation center that offers educational programs in various fields, including
+        software development, networking, and IT-related courses. It focuses on providing students with practical
+        knowledge and hands-on experience to help them excel in their careers. The institution is known for its high-quality
+        training, experienced faculty, and modern learning environment.
+      </p>
+      <p class="lead">
+        At Unicom TIC, students gain industry-relevant skills through project-based learning, workshops, and real-world applications.
+        The center also emphasizes soft skills and communication to ensure graduates are job-ready. Many students from Unicom TIC
+        pursue careers in software development, cybersecurity, and IT support, making it a great choice for those looking to build
+        a strong foundation in technology.
+      </p>
+    </div>
+
+    <!-- Image Slider Section -->
+    <div class="slider-container">
+      <div class="slider" [ngStyle]="{'transform': getSliderTransform()}">
+        <img *ngFor="let image of images" [src]="image" alt="Unicom Image" class="slider-img"/>
+      </div>
+    </div>
   </div>
 </div>
 
