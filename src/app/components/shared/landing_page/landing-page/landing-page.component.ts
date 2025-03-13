@@ -15,36 +15,21 @@ import { HttpClientModule } from '@angular/common/http';
   template: `<i class="fa-brands fa-java"></i>`,
 
 })
-export class LandingPageComponent  implements OnInit, OnDestroy {
+export class LandingPageComponent {
   images: string[] = [
     '/ai-generated-portrait-of-a-smiling-schoolgirl-using-laptop-in-classroom-at-school-photo\ \(1\).jpg',
     '/banner_3.png',
     '/cap2.png',
   ];
+  currentIndex: number = 0;
 
-  currentImageIndex: number = 0;
-  intervalId: any;
-
-  constructor() { }
-
-  ngOnInit(): void {
-    this.startAutoSlide();
+  constructor() {
+    setInterval(() => {
+      this.nextImage();
+    }, 3000);
   }
 
-  ngOnDestroy(): void {
-    // Clear the interval when the component is destroyed
-    if (this.intervalId) {
-      clearInterval(this.intervalId);
-    }
-  }
-
-  startAutoSlide(): void {
-    this.intervalId = setInterval(() => {
-      this.currentImageIndex = (this.currentImageIndex + 1) % this.images.length;
-    }, 3000); // Change image every 3 seconds
-  }
-
-  getSliderTransform(): string {
-    return `translateX(-${this.currentImageIndex * 100}%)`; // Slide images horizontally
+  nextImage() {
+    this.currentIndex = (this.currentIndex + 1) % this.images.length;
   }
 }

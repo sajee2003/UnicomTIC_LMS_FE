@@ -61,33 +61,37 @@
 
 
 <!-- Welcome Section -->
-<div id="abut-unciom" class="container-fluid py-5">
-  <div id="about" class="d-flex justify-content-center align-items-center">
+<div id="abut-unciom" class="d-flex justify-content-around align-items-center  ">
+  <div id="about" class="d-flex justify-content-between align-items-center">
+    
+        <!-- Image Slider Section -->
+<!-- image-slider.component.html -->
+<div class="slider">
+  <img [src]="images[currentIndex]" alt="Image Slider">
+</div>
+
+</div>
+
+
+
+
     <!-- Text Section -->
     <div class="text-section">
       <h2 class="heading-unicom text-light">Welcome To Unicom <span class="text-muted"><strong>TIC</strong></span></h2>
       <p class="lead">
-        Unicom TIC is a technology and innovation center that offers educational programs in various fields, including
-        software development, networking, and IT-related courses. It focuses on providing students with practical
-        knowledge and hands-on experience to help them excel in their careers. The institution is known for its high-quality
-        training, experienced faculty, and modern learning environment.
-      </p>
-      <p class="lead">
-        At Unicom TIC, students gain industry-relevant skills through project-based learning, workshops, and real-world applications.
-        The center also emphasizes soft skills and communication to ensure graduates are job-ready. Many students from Unicom TIC
-        pursue careers in software development, cybersecurity, and IT support, making it a great choice for those looking to build
+        Unicom TIC is a technology and innovation center that offers educational <br> programs in various fields, including
+        software development, networking, and IT-related courses. <br>It focuses on providing students with practical
+        knowledge and hands-on experience to help them excel in their careers. <br>The institution is known for its high-quality
+        training, experienced faculty, and modern learning environment. <br><br>
+     
+        At Unicom TIC, students gain industry-relevant skills through project-based learning, <br>workshops, and real-world applications.
+        The center also emphasizes soft skills and communication <br> to ensure graduates are job-ready. Many students from Unicom TIC
+        pursue careers in software development, cybersecurity,<br> and IT support, making it a great choice for those looking to build <br>
         a strong foundation in technology.
       </p>
     </div>
-
-    <!-- Image Slider Section -->
-    <div class="slider-container">
-      <div class="slider" [ngStyle]="{'transform': getSliderTransform()}">
-        <img *ngFor="let image of images" [src]="image" alt="Unicom Image" class="slider-img"/>
-      </div>
     </div>
-  </div>
-</div>
+    
 
 
 <!-- Why Choose Us Section -->
@@ -172,7 +176,7 @@
       <!-- Contact Info -->
       <div class="col-md-4 mb-3">
       
-        <p>Email: supportic.com</p>
+        <p>Email: Unicomtic.com</p>
         <p>Phone: +94 7400 30 977</p>
         <p>address:Unicom Training and Innovation Center, MPCS Building, No 127, Kankesanthurai Road, Jaffna</p>
         
